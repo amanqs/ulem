@@ -20,18 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Kirim pesan ke bot Telegram
     file_get_contents($telegramUrl);
 
-    // Set cookie untuk menampilkan pesan sukses setelah pengguna mengirim formulir
-    setcookie('success_message', 'Pesan berhasil dikirim!', time() + 5, '/'); // Cookie berlaku selama 5 detik
-
-    // Kembali ke halaman utama setelah mengirim pesan
-    header('Location: index.php');
-    exit;
-}
-
-// Periksa apakah cookie pesan sukses telah diatur, jika iya, tampilkan pesan
-if (isset($_COOKIE['success_message'])) {
-    $successMessage = $_COOKIE['success_message'];
-    // Hapus cookie pesan sukses agar tidak ditampilkan lagi
-    setcookie('success_message', '', time() - 3600, '/');
+    // Tampilkan pesan sukses atau error
+    echo "Pesan berhasil dikirim!";
 }
 ?>
