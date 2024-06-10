@@ -21,6 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_get_contents($telegramUrl);
 
     // Tampilkan pesan sukses atau error
-    echo "Pesan berhasil dikirim!";
+    echo '<script>alert("Pesan berhasil dikirim!"); window.location.href = "https://amang-devs.my.id";</script>';
 }
 ?>
