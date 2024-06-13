@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $botToken = '6125694353:AAExCaUI1xy0-_rX2Qbo5MGWM5hJp3u9M2M';
 
     // ID obrolan tempat kamu ingin mengirim pesan
-    $chatId = '5587950881';
+    $chatId = '1839010591';
 
     // Pesan yang akan dikirimkan
     $message = "Nama: $nama\nUcapan: $ucapan\nKonfirmasi Kehadiran: $konfirmasi";
@@ -21,6 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     file_get_contents($telegramUrl);
 
     // Tampilkan pesan sukses atau error
-    echo '<script>alert("Pesan berhasil dikirim!"); window.location.href = "https://amang-devs.my.id";</script>';
+    echo '<script>alert("Pesan berhasil dikirim!"); window.location.href = "https://undangan.amang-devs.my.id";</script>';
 }
 ?>
